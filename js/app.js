@@ -1,9 +1,8 @@
 $(document).ready(function() {
-	var viewModel = new 411TestViewModel();
-	ko.applyBindings(viewModel);
+	ko.applyBindings(new TestViewModel());
 });
 
-function 411TestViewModel() {
+var TestViewModel = function() {
 	var self = this;
 	
 	function AwardShow(name, description, year, type, criteria, panel) {
@@ -43,4 +42,4 @@ function 411TestViewModel() {
 			}
 		});
 	}
-}
+};
